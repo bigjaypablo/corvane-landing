@@ -110,10 +110,10 @@ export default function Proof() {
 
       {/* Logo strip: slow marquee, static for reduced-motion users */}
       <div
-        className="relative mt-10 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] sm:mt-14"
+        className="relative mt-10 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] lg:[mask-image:none] sm:mt-14"
         aria-label="Clients"
       >
-        <ul className="flex w-max gap-3 px-3 [animation:proof-marquee_32s_linear_infinite] motion-reduce:[animation:none]">
+        <ul className="flex w-max gap-3 px-3 [animation:proof-marquee_32s_linear_infinite] motion-reduce:[animation:none] lg:w-full lg:flex-wrap lg:justify-center lg:[animation:none]">
           {loop.map((name, i) => {
             const Icon = logoIcons[i % logoIcons.length]
             return (

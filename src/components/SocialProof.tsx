@@ -26,7 +26,7 @@ export default function SocialProof() {
   const newest = shown[shown.length - 1]
 
   return (
-    <div className="mb-5">
+    <div className="mb-6 mt-2">
       <div className="flex items-center gap-4">
         <div className="flex -space-x-2.5" aria-hidden="true">
           <AnimatePresence initial={false} mode="popLayout">

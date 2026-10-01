@@ -54,7 +54,7 @@ export default function Hero() {
         </motion.div>
 
         <div className="mt-24 flex flex-col gap-8 sm:mt-32 lg:mt-40 lg:flex-row lg:items-end lg:justify-between">
-          <div className="order-first w-full lg:order-last lg:w-[460px]">
+          <div className="order-first w-full lg:order-last lg:w-[460px] mb-2">
             <FlowTiles />
           </div>
 
