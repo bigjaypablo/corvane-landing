@@ -120,7 +120,8 @@ export default function Proof() {
               <li
                 key={`${name}-${i}`}
                 aria-hidden={i >= showcase.logos.length ? true : undefined}
-                className="flex h-12 shrink-0 items-center gap-2 rounded-full border border-slate-200 bg-white px-5 text-slate-500"
+                data-dup={i >= showcase.logos.length ? 'y' : undefined}
+                className={`flex h-12 shrink-0 items-center gap-2 rounded-full border border-slate-200 bg-white px-5 text-slate-500 ${i >= showcase.logos.length ? 'lg:hidden' : ''}`}
               >
                 <Icon size={16} aria-hidden="true" />
                 <span className="whitespace-nowrap text-[13px] font-semibold">{name}</span>
