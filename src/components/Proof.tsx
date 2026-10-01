@@ -32,11 +32,11 @@ function CaseCard({ c, featured = false }: { c: Case; featured?: boolean }) {
   return (
     <article
       className={`relative flex h-full flex-col overflow-hidden rounded-3xl border p-5 sm:p-7 ${
-        featured ? 'on-dark border-white/10 bg-black text-white shadow-lift' : 'border-slate-200 bg-white shadow-card'
+        featured ? 'on-dark border-white/10 bg-black text-white shadow-lift [transform:translateZ(0)] [backface-visibility:hidden]' : 'border-slate-200 bg-white shadow-card'
       }`}
     >
       {featured && (
-        <div aria-hidden="true" className="pointer-events-none absolute -right-14 -top-14 h-52 w-52 rounded-full bg-violet-600/50 blur-3xl" />
+        <div aria-hidden="true" className="pointer-events-none absolute -right-14 -top-14 h-52 w-52 rounded-full bg-violet-600/50 blur-2xl" />
       )}
 
       <div className="relative flex items-center gap-3">
