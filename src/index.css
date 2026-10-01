@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-white font-sans text-slate-600 antialiased;
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply text-neutral-950 tracking-tight;
+  }
+  :focus-visible {
+    outline: 2px solid #7c3aed;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  .on-dark :focus-visible {
+    outline-color: #c4b5fd;
+  }
+  .on-light :focus-visible {
+    outline-color: #7c3aed;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@keyframes proof-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
